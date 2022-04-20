@@ -10,6 +10,7 @@
  */
 #include <iostream>
 extern void write_extern();
+extern void write_extern_b();
 
 int count;
 
@@ -17,6 +18,7 @@ int main()
 {
     count = 10;
     write_extern();
+    write_extern_b();
     return 0;
 }
 
