@@ -13,8 +13,8 @@
 using namespace std;
 class className
 {
-    // private:
-    //     /* data */
+    private:
+        double width;
     public:
         double length;
         int number;
@@ -61,6 +61,7 @@ int main(int argc, char const *argv[])
     className box2;
     box2.set(60, 7);
     cout << "box2 = " << box2.get() <<endl;
-    /* code */
+    // -----------
+    // box2.width // width 是私有变量 不能在 类之外访问
     return 0;
 }
