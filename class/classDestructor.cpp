@@ -56,7 +56,8 @@ void Line::setLength(int len)
     length = len;
     // pt = &len;
 
-    pt =(new int( len));
+    
+    pt =(new int( len));// https://zhuanlan.zhihu.com/p/148299737?from_voters_page=true
 };
 // void Line::setStrings(char str[3])
 // {
