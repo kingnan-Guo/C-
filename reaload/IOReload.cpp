@@ -22,16 +22,29 @@ class Box{
             length = len;
             height = hei;
             width = wid;
-        }
+        };
+        Box(){
+            length = 0;
+            height = 0;
+            width = 0;
+        };
+        Box(double len, double hei, double wid){
+            length = len;
+            height = hei;
+            width = wid;
+        };
+
         // Box operator << (const Box& a, const Box& b){
             
         // };
-        friend ostream &operator << (ostream &output, const Box& D){
-            output << " D.length = " << D.length << " = D.height =  " << D.height 
-        };
-        friend istream &operator >> (istream &input, const Box& b){
-            input >> b.length >> b.height
-        };
+        friend ostream &operator << (ostream &output,  Box& D){
+            output << " D.length = " << D.length << " = D.height =  " << D.height;
+            return output;
+        }
+        friend istream &operator >> (istream &input, Box& b){
+            input >> b.length >> b.height;
+            return input;
+        }
 
 };
 
