@@ -65,6 +65,7 @@
         "deque": "cpp",
         "iomanip": "cpp",
         "stack": "cpp",
-        "csignal": "cpp"
+        "csignal": "cpp",
+        "thread": "cpp"
     }
 }
